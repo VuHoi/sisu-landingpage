@@ -1,9 +1,9 @@
-import React, { FC, forwardRef } from 'react';
+import { IconLock } from '@components/Icons/IconLock';
+import { IconUser } from '@components/Icons/IconUserLight';
 import clsx from 'clsx';
+import React, { FC, forwardRef } from 'react';
 
 import s from './TextInput.module.css';
-import { IconUser } from '@components/Icons/IconUserLight';
-import { IconLock } from '@components/Icons/IconLock';
 
 export interface TextInputProps extends React.ComponentPropsWithoutRef<'input'> {
   inputError?: string;

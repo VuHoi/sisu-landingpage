@@ -1,6 +1,6 @@
+import clsx from 'clsx';
 import NextLink from 'next/link';
 import React, { FC } from 'react';
-import clsx from 'clsx';
 
 import s from './LinkButton.module.css';
 

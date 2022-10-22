@@ -1,7 +1,7 @@
-import React, { forwardRef } from 'react';
-import clsx from 'clsx';
-
 import { IconSearch } from '@components/Icons';
+import clsx from 'clsx';
+import React, { forwardRef } from 'react';
+
 import inputStyles from '../Input.module.scss';
 
 export interface SearchInputProps extends Omit<React.ComponentPropsWithoutRef<'input'>, 'size'> {

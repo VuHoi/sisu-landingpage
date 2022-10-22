@@ -1,7 +1,8 @@
 import { SEOHead, SEOHeadProps } from '@components';
-import React, { FC } from 'react';
-import { NavBar } from './NavBar';
+import React, { FC, PropsWithChildren } from 'react';
+
 import Footer from './Footer';
+import { NavBar } from './NavBar';
 import { Sidebar } from './Sidebar';
 
 export type LayoutProps = {
@@ -10,7 +11,7 @@ export type LayoutProps = {
   loading?: boolean;
 };
 
-export const DefaultLayout: FC<LayoutProps> = ({
+export const DefaultLayout: FC<PropsWithChildren<LayoutProps>> = ({
   headProps,
   children,
   hideFooter,

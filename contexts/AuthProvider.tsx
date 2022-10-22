@@ -23,7 +23,7 @@ const AuthContext = React.createContext({});
 /**
  * Auth Provider
  */
-export const AuthProvider: FC = ({ children }) => {
+export const AuthProvider: FC<{children:React.ReactNode}> = ({ children }) => {
   // const router = useRouter();
   // const user = useAppSelector(userSelector);
 

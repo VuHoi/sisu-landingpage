@@ -1,18 +1,12 @@
-import React, { FC, useEffect, useState } from 'react';
-import NextImage from 'next/image';
-import NextLink from 'next/link';
-import LogoImg from '@public/images/logo.svg';
-
-import { IconUser, IconOverview } from '@components/Icons';
-import { useTranslation } from 'next-i18next';
-import { layoutConfig } from '@features/layout/layout.config';
+import { IconUser } from '@components/Icons';
+import { IconGiving } from '@components/Icons/IconGiving';
+import { IconOverview } from '@components/Icons/IconOverview';
 import { pageRoutes } from '@config/navigations';
 import clsx from 'clsx';
-import { IconGiving } from '@components/Icons/IconGiving';
-import { IconReceiving } from '@components/Icons/IconReceiving';
-import { IconNewRequest } from '../../../../components/Icons/IconNewRequest';
-import { IconSetting } from '../../../../components/Icons/IconSetting';
+import NextLink from 'next/link';
 import { useRouter } from 'next/router';
+import React, { FC, useEffect, useState } from 'react';
+
 
 interface SidebarItemProps {
   title: string;
@@ -44,7 +38,6 @@ export const SidebarItem: FC<SidebarItemProps> = ({ title, icon, href }) => {
 };
 
 export const Sidebar: FC = () => {
-  const { t } = useTranslation(layoutConfig.i18nNamespaces);
 
   const menu = [
     {

@@ -1,6 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import storage from '@config/persistStorage';
-import { persistReducer } from 'redux-persist';
+
 import { UserResponse } from './example.type';
 
 export interface OverviewState {
@@ -22,15 +21,6 @@ const slice = createSlice({
   },
 });
 
-const reducer = persistReducer(
-  {
-    key: 'sv:overview',
-    storage,
-    whitelist: ['user'],
-  },
-  slice.reducer,
-);
-
 export const { setUser, reset } = slice.actions;
 
-export default reducer;
+export default  slice.reducer;

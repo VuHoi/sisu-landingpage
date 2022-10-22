@@ -1,5 +1,6 @@
-import React, { forwardRef } from 'react';
 import clsx from 'clsx';
+import React, { forwardRef } from 'react';
+
 import { Spinner } from '../../Spinner';
 
 export interface ButtonProps extends React.ComponentPropsWithoutRef<'button'> {

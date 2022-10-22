@@ -1,5 +1,5 @@
-import { FC, ComponentPropsWithoutRef } from 'react';
 import clsx from 'clsx';
+import { ComponentPropsWithoutRef,FC } from 'react';
 
 export type ContainerProps = ComponentPropsWithoutRef<'div'>;
 

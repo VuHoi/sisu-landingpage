@@ -1,6 +1,6 @@
 import { SEO } from '@config/env';
 import NextHead from 'next/head';
-import React from 'react';
+import React, { PropsWithChildren } from 'react';
 
 export type SEOHeadProps = {
   seoTitle?: string;
@@ -13,13 +13,13 @@ export type SEOHeadProps = {
 /**
  * SEO Head component
  */
-export const SEOHead: React.FC<SEOHeadProps> = ({
+export const SEOHead: React.FC<PropsWithChildren<SEOHeadProps>> = ({
   seoTitle,
   seoDescription = SEO.description,
   seoURL = SEO.url,
   seoImage = SEO.image,
   favicon = SEO.favicon,
-  children,
+  children
 }) => {
   return (
     <NextHead>
