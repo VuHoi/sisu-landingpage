@@ -1,0 +1,50 @@
+.root {
+}
+
+.inputWrapper {
+  @apply font-medium transition;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: #fdfdfd;
+  border: 1px solid #d3d5d8;
+  overflow: hidden;
+}
+
+.input {
+  outline: none;
+  border: none;
+  height: 100%;
+  width: 100%;
+  &::placeholder {
+    color: #acacac;
+  }
+}
+
+.error {
+  border-color: var(--error);
+}
+
+.inputError {
+  color: var(--error);
+  margin-top: 20px;
+}
+
+.sizeXLarge {
+  //  TODO: Add extra large styles
+}
+
+.sizeLarge {
+  @apply h-[48px] text-base font-medium;
+  & > input {
+    @apply px-[10px];
+  }
+}
+
+.sizeMedium {
+  @apply h-[40px] text-sm font-medium rounded;
+  & > input {
+    @apply px-[20px];
+  }
+}
