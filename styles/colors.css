@@ -1,5 +1,5 @@
 :root {
-  --primary: #1db9c3;
+  /* --primary: #1db9c3;
   --secondary: #ffd1ba;
 
   --bg-primary: #ffffff;
@@ -14,9 +14,9 @@
   --success: #52c41a;
 
   --btn-primary:  #1890FF;
-  --btn-secondary: #ffd1ba;
+  --btn-secondary: #ffd1ba; */
 }
 
-[data-theme='dark'] {
+[data-theme="dark"] {
   /* Dark mode */
 }

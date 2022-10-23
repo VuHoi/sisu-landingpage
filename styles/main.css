@@ -1,7 +1,7 @@
-@import './colors.css';
+@import "./colors.css";
 
-@tailwind base;
-@tailwind components;
+/* @tailwind base; */
+/* @tailwind components; */
 @tailwind utilities;
 
 html,
@@ -10,98 +10,7 @@ body {
   @apply font-sans;
   color: var(--text-primary);
   font-size: 16px;
-  background-color: #F0F3F7;
+  background-color: #f0f3f7;
   /* Font weight medium */
   /* font-weight: 500; */
-}
-a {
-  color: black x;
-}
-#__next {
-  @apply min-h-full;
-}
-
-.date .ant-select-arrow {
-  transform: scale(2) !important;
-  margin-top: -7px !important;
-}
-
-.date .ant-select {
-  border-radius: 10px !important;
-}
-
-.date .ant-select-selector {
-  height: 50px !important;
-}
-.date .ant-select-selection-item {
-  line-height: 50px !important;
-}
-
-.ant-picker-focused{
-  border-color: #d9d9d9;
-}
-
-.ant-picker:hover{
-  border-color: #d9d9d9;
-
-}
-
-.ant-picker{
-  border-radius: 2px;
-  font-size: 0.9rem !important;
-}
-
-.ant-picker input{
-  opacity: 0.85;
-  font-size: 0.9rem !important;
-
-}
-
-.ant-picker input::placeholder{
-  font-size: 0.9rem !important;
-}
-
-.border-blue{
-  border-color: #1890FF !important;
-}
-
-.user-container{
-  height: calc(100vh - 100px);
-  overflow-y: auto;
-}
-
-.ant-tabs-tab-btn{
-  font-size: 16px !important;
-padding-left: 20px;
-padding-right: 20px;
-text-align: center;
-}
-
-.ant-btn-primary{
-  border-color: #1890ff;
-  background: #1890ff !important;
-}
-.icon-primary svg {
-    fill: #1890FF;
-}
-
-.supplier .ant-collapse-content-box{
-padding: 0 !important;
-}
-
-.dropdown-content-auth{
-  overflow: hidden;
-  width: 150px;
-  opacity: 0;
-  transition: all 0.3s linear;
-  z-index: 1000;
-  padding: 10px;
-}
-
-.dropdown-auth:hover .dropdown-content-auth {
-opacity: 1;
-}
-
-.dropdown-content-auth div:hover{
-  color:  #1890FF;
 }
