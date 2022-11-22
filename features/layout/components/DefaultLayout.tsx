@@ -1,9 +1,8 @@
-import { SEOHead, SEOHeadProps } from '@components';
-import React, { FC, PropsWithChildren } from 'react';
+import { SEOHead, SEOHeadProps } from "@components";
+import React, { FC, PropsWithChildren } from "react";
 
-import Footer from './Footer';
-import { NavBar } from './NavBar';
-import { Sidebar } from './Sidebar';
+import Footer from "./Footer";
+import { NavBar } from "./NavBar";
 
 export type LayoutProps = {
   headProps?: SEOHeadProps;
@@ -23,7 +22,6 @@ export const DefaultLayout: FC<PropsWithChildren<LayoutProps>> = ({
       {/* SEO head */}
       <SEOHead {...headProps} />
       <div className="flex h-full">
-        <Sidebar />
         <div className="h-full w-full">
           {/* Navigation Bar */}
           <NavBar />

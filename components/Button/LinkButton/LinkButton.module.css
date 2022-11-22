@@ -1,8 +1,0 @@
-.root {
-  @apply font-bold underline transition;
-  color: var(--text-link);
-}
-
-.root:hover {
-  color: var(--text-link-hover);
-}

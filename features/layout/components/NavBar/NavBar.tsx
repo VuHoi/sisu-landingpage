@@ -3,8 +3,6 @@ import { layoutConfig } from "@features/layout/layout.config";
 import { useTranslation } from "next-i18next";
 import React, { FC } from "react";
 
-import { IconSearch } from "../../../../components/Icons/IconSearch";
-
 export const NavBar: FC = () => {
   const { t } = useTranslation(layoutConfig.i18nNamespaces);
   // const user = useAppSelector(userSelector);
@@ -13,8 +11,6 @@ export const NavBar: FC = () => {
     <div className="sticky top-0 z-50 w-full">
       {/* Menu items */}
       <div className="flex items-center gap-x-[20px] pr-[20px] justify-end h-[48px] bg-white shadow-[0_1px_4px_0_rgba(0,21,41,0.12)] w-full font-light ">
-        <IconSearch className="scale-[1.2] opacity-[0.65] hover:opacity-[1] cursor-pointer" />
-
         <IconBell className="scale-[1.2] opacity-[0.65] hover:opacity-[1] cursor-pointer" />
         {/* <div className="h-[24px] w-[24px] bg-[#D4D7D9] rounded-full cursor-pointer">
           {user?.avatar ? (
