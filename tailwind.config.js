@@ -1,7 +1,12 @@
-const defaultTheme = require('tailwindcss/defaultTheme');
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
-  content: ['./pages/**/*.{js,ts,jsx,tsx}', './features/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}','node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}'],
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./features/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+    "node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}",
+  ],
   theme: {
     screens: {
       ...defaultTheme.screens,
@@ -13,15 +18,12 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: 'var(--primary)',
-        secondary: 'var(--secondary)',
-        'btn-primary': 'var(--btn-primary)',
-        'btn-secondary': 'var(--btn-secondary)',
+        primary: "var(--primary)",
+        secondary: "var(--secondary)",
+        "btn-primary": "var(--btn-primary)",
+        "btn-secondary": "var(--btn-secondary)",
       },
-      backgroundImage: {
-        'background-sign-in': "url('/images/background-sign-in.png')",
-      }
     },
   },
-  plugins: [require('@tailwindcss/line-clamp')],
+  plugins: [require("@tailwindcss/line-clamp")],
 };

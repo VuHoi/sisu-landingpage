@@ -1,7 +1,7 @@
 @import "./colors.css";
 
-/* @tailwind base; */
-/* @tailwind components; */
+@tailwind base;
+@tailwind components;
 @tailwind utilities;
 
 html,
@@ -10,7 +10,263 @@ body {
   @apply font-sans;
   color: var(--text-primary);
   font-size: 16px;
-  background-color: #f0f3f7;
-  /* Font weight medium */
-  /* font-weight: 500; */
+  font-family: Gordita;
+  margin: 0 !important;
+  overflow-x: hidden;
+}
+
+.active-link::before {
+  content: "";
+  position: absolute;
+  width: calc(100% + 16px);
+  height: 6px;
+  left: -8px;
+  bottom: -5px;
+  background: #0f4fe1;
+  opacity: 0.4;
+}
+
+.introduce {
+  background: linear-gradient(
+    180deg,
+    rgba(159, 185, 243, 0.3) 0%,
+    rgba(159, 185, 243, 0) 100%
+  );
+}
+
+.introduce-container {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  padding-top: 186px;
+}
+
+.introduce-heading {
+  font-family: Gordita;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 71px;
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 180%;
+  margin-top: 42px;
+}
+
+.card-description {
+  font-size: 17px;
+  line-height: 180%;
+  margin-top: 16px;
+}
+
+.background-form {
+  background: url(/images/form-background.svg) repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.form-container {
+  padding-top: 250px;
+  padding-bottom: 250px;
+  background-color: #0f4fe1;
+  border-radius: 20px;
+  position: relative;
+}
+
+.form-title {
+  color: #fff;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 180%;
+  position: relative;
+}
+
+.form-title::before {
+  content: "";
+  position: absolute;
+  width: calc(100% + 32px);
+  height: 6px;
+  left: -16px;
+  bottom: 29px;
+  background: #ffffff;
+  opacity: 0.4;
+  z-index: 1;
+}
+
+.form-subtitle {
+  color: #fff;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 180%;
+  text-align: center;
+}
+
+.email-input {
+  margin-top: 46px;
+}
+
+.inner {
+  border: 2px solid white;
+  display: flex;
+  border: none;
+  font-family: Gordita;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 180%;
+  background: #ffffff;
+  border: 1.5px solid rgba(15, 79, 225, 0.15);
+  box-shadow: 0 16px 24px #0000000f, 0 2px 6px #0000000a, 0 0 1px #0000000a;
+  border-radius: 1000px;
+  height: 70px;
+}
+
+.input-email {
+  border: none;
+  flex-grow: 1;
+  padding-left: 32px;
+  padding-right: 16px;
+  outline: none;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+
+.submit-button {
+  min-width: 168px;
+  background: #0f4fe1;
+  border-radius: 300px;
+  font-family: Gordita;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 169.5%;
+  color: #fff;
+  padding: 20px 32px;
+  height: 68px;
+  cursor: pointer;
+  position: relative;
+  bottom: 1px;
+  right: -1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-conner {
+  right: 42px;
+  bottom: -54px;
+  background: #ffffff;
+  box-shadow: 0 24px 32px #0000000a, 0 16px 24px #0000000a, 0 4px 8px #0000000a,
+    0 0 1px #0000000a;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 102px;
+  height: 119px;
+}
+
+.support-title {
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 180%;
+}
+
+.bullet {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 215%;
+}
+
+.bullet::before {
+  display: inline-block;
+  content: "";
+  background: url(/images/check-bullet.svg) no-repeat;
+  width: 18px;
+  height: 18px;
+  margin-right: 16px;
+  position: relative;
+  bottom: -3px;
+}
+
+.apps-container {
+  background: linear-gradient(
+    180deg,
+    rgba(159, 185, 243, 0) 0%,
+    rgba(159, 185, 243, 0.3) 100%
+  );
+  border-radius: 16px;
+  height: 100%;
+  width: 100%;
+}
+
+.right {
+  flex-shrink: 0;
+  background: #f4f7ff;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 364px;
+  box-shadow: 0 6px #0f4fe1;
+}
+
+.right > .title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 35px;
+  text-align: center;
+  margin-top: 46px;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+.right > .subtitle {
+  font-size: 18px;
+  line-height: 175%;
+  text-align: center;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-top: 20px;
+}
+
+.right > .send-email-button {
+  background: #0f4fe1;
+  border-radius: 100px;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 42px;
+  padding-right: 42px;
+  color: #fff;
+  text-decoration: none;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: normal;
+  margin-top: 42px;
+}
+
+.footer {
+  margin-top: 50px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.social-media {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  margin-bottom: 134px;
 }

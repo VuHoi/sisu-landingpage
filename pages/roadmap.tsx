@@ -1,9 +1,9 @@
 // import customStaticProps from '@utils/staticProps';
-import { HomePage } from "@features/home/pages/home.page";
+import { DefaultLayout } from "@features/layout/components/DefaultLayout";
 import React from "react";
 
 export default function Home() {
-  return <HomePage />;
+  return <DefaultLayout></DefaultLayout>;
 }
 
 // export const getStaticProps = customStaticProps(null, null);
