@@ -1642,6 +1642,7 @@ __metadata:
     eslint-config-prettier: ^8.5.0
     eslint-plugin-simple-import-sort: ^8.0.0
     faker: ^6.6.6
+    fast-deep-equal: ^3.1.3
     husky: ^8.0.1
     js-cookie: ^3.0.1
     lint-staged: ^13.0.3
@@ -1652,9 +1653,11 @@ __metadata:
     next-i18next: ^12.1.0
     postcss: ^8.4.18
     prettier: ^2.7.1
+    prop-types: ^15.8.1
     query-string: ^7.1.1
     react: 18.2.0
     react-chartjs-2: ^4.3.1
+    react-contenteditable: ^3.3.6
     react-dom: 18.2.0
     react-hook-form: ^7.38.0
     react-icons: ^4.6.0
@@ -5042,7 +5045,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.6.2, prop-types@npm:^15.7.2, prop-types@npm:^15.8.1":
+"prop-types@npm:^15.6.2, prop-types@npm:^15.7.1, prop-types@npm:^15.7.2, prop-types@npm:^15.8.1":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:
@@ -5145,6 +5148,18 @@ __metadata:
     chart.js: ^3.5.0
     react: ^16.8.0 || ^17.0.0 || ^18.0.0
   checksum: 574d12cc43b9b4a0f1e04cc692982e16ef7083c03da2a8a9fc2180fe9bcadc793008f81d8f4eec5465925eff84c95d7c523cb74376858b363ae75a83bb3c2a5d
+  languageName: node
+  linkType: hard
+
+"react-contenteditable@npm:^3.3.6":
+  version: 3.3.6
+  resolution: "react-contenteditable@npm:3.3.6"
+  dependencies:
+    fast-deep-equal: ^3.1.3
+    prop-types: ^15.7.1
+  peerDependencies:
+    react: ">=16.3"
+  checksum: 3ff8b78e63ddcdc4b93cf19ec022872116d2d8f672b2ff1b9ae12e9d807b88530d2b17bef2de9ab8a61a182bd9338388f11356cf1681d7c7894642c37be65def
   languageName: node
   linkType: hard
 
