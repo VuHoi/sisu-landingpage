@@ -109,7 +109,6 @@ export default class ContentEditable extends React.Component<Props> {
   emitChange = (originalEvt: React.SyntheticEvent<any>) => {
     const el = this.getEl();
     if (!el) return;
-    console.log(el);
     const html = el.innerHTML;
     if (this.props.onChange && html !== this.lastHtml) {
       // Clone event with Object.assign to avoid

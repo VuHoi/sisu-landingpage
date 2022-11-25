@@ -1,15 +1,26 @@
 // import customStaticProps from '@utils/staticProps';
+import { Button } from "@components";
 import ContentEditable from "@components/contenteditable";
 import { DefaultLayout } from "@features/layout/components/DefaultLayout";
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 export default function Home() {
   const ref = useRef();
-  const [html, sethtml] = useState("<b>Hello <i>World</i></b>");
+  const [html, sethtml] = useState("");
   const handleChange = (evt: any) => {
-    sethtml(evt.target.value + "<h1>aaa</h1>");
+    sethtml(evt.target.value);
   };
+  useEffect(() => {
+    if (ref.current) (ref.current as any).focus();
+  }, []);
   return (
-    <DefaultLayout>
+    // <DefaultLayout>
+    <div className="flex flex-col gap-10 px-[20px]">
+      <div className="flex justify-center font-bold mt-10">My Editor</div>
+      <div className="flex justify-center">
+        <div className="flex gap-3">
+          <Button variant="outlined">Bold</Button>
+        </div>
+      </div>
       <ContentEditable
         innerRef={ref as any}
         html={html} // innerHTML of the editable div
@@ -17,7 +28,8 @@ export default function Home() {
         onChange={handleChange} // handle innerHTML change
         tagName="article" // Use a custom HTML tag (uses a div by default)
       />
-    </DefaultLayout>
+    </div>
+    // </DefaultLayout>
   );
 }
 
